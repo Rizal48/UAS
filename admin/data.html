@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Admin Electro - Tables</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Electro</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Menu</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="data.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Data
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Masuk Sebagai:</div>
+                        Admin
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Data</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                Berikut adalah paparan data para pembeli Electro.
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Data Pembeli
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Nama</th>
+                                            <th>Kategori</th>
+											<th>Nama Barang</th>
+                                            <th>Kota</th>
+                                            <th>Tanggal</th>
+                                            <th>Harga</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ahmad Dazzle</td>
+											<td>Mouse</td>
+                                            <td>Logitech G304 Ligthspeed Wireless Gaming</td>
+                                            <td>Bandung</td>
+                                            <td>06/06/2021</td>
+                                            <td>RP.700.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Muhammad Rikimaru</td>
+                                            <td>TV</td>
+                                            <td>Samsung UA43N5003 Full HD LED TV 43 inch</td>
+                                            <td>Jakarta</td>
+                                            <td>10/06/2021</td>
+                                            <td>RP.4.700.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lina Putri</td>
+                                            <td>Laptop</td>
+                                            <td>Laptop ACER GAMING Nitro 5 AN515 | Ryzen 7 5800 16GB 512ssd RTX3060 6GB W10+OHS 15.6FHD 144Hz |</td>
+                                            <td>Malang</td>
+                                            <td>20/05/2021</td>
+                                            <td>RP.18.800.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gondhar Putra</td>
+                                            <td>Headset</td>
+                                            <td>Fantech FUSION HG22 CMedia Chipset 7.1 Surround Sound Headset Gaming</td>
+                                            <td>Surabaya</td>
+                                            <td>25/06/2021</td>
+                                            <td>RP.799.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nur Lanaya</td>
+                                            <td>PlayStation</td>
+                                            <td>PlayStation 5</td>
+                                            <td>Samarinda</td>
+                                            <td>01/07/2021</td>
+                                            <td>RP.12.950.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mirana</td>
+                                            <td>Keyboard</td>
+                                            <td>Logitech Bluetooth Keyboard K380 , K 380 , K-380 - Biru</td>
+                                            <td>Balikpapan</td>
+                                            <td>30/06/2021</td>
+                                            <td>RP.363.789</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Electro 2021</div>
+                            <div>
+                                <a href="#">Kebijakan Privasi</a>
+                                &middot;
+                                <a href="#">Syarat & Ketentuan</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
